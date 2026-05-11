@@ -1686,3 +1686,296 @@ footer .footer-bottom .footer-copy {
     grid-template-columns: 1fr;
   }
 }
+
+/* ======= CHECKOUT ======= */
+
+.checkout {
+  padding: 40px 0 60px;
+  background-color: #f8faff;
+}
+
+.checkout-inner {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* ЛЕВАЯ - форма */
+.checkout-form {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.checkout-form h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.checkout-form .cart-type {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* Кнопки оплаты */
+.payment-methods {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.pay-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1.5px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pay-btn.active {
+  border-color: #0891b2;
+}
+
+.pay-btn img {
+  height: 28px;
+  object-fit: contain;
+}
+
+/* Поля формы */
+.form-field {
+  margin-bottom: 16px;
+}
+
+.form-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 13px;
+  outline: none;
+  color: #333;
+}
+
+.form-field input:focus {
+  border-color: #0891b2;
+}
+
+.form-field input::placeholder {
+  color: #bbb;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .form-field {
+  flex: 1;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.form-checkbox input {
+  accent-color: #0891b2;
+}
+
+.btn-confirm {
+  width: 100%;
+  background-color: #0891b2;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-confirm:hover {
+  background-color: #0369a1;
+}
+
+/* ПРАВАЯ - summary */
+.checkout-summary {
+  width: 260px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.checkout-summary h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.summary-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.summary-item:last-of-type {
+  border-bottom: none;
+}
+
+.summary-item img {
+  width: 64px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.summary-item-info p {
+  font-size: 12px;
+  color: #888;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.summary-item-info .item-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+/* Итого */
+.summary-totals {
+  margin-top: 8px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.summary-row.total {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  margin-top: 4px;
+}
+
+/* ======= TOP OFFERS ======= */
+
+.top-offers {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.top-offers-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.top-offers-top h2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.offer-card {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  cursor: pointer;
+}
+
+.offer-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.offer-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.1));
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.offer-percent {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.offer-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.offer-desc {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+.offer-desc span {
+  color: #2dd4bf;
+  font-weight: 600;
+}
+
+/* АДАПТИВ */
+@media (max-width: 768px) {
+  .checkout-inner {
+    flex-direction: column;
+  }
+
+  .checkout-summary {
+    width: 100%;
+  }
+
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
